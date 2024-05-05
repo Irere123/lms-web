@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 
@@ -22,6 +23,18 @@ export default function LoginPage() {
           <Input placeholder="Email" />
           <Input placeholder="Password" />
           <Button color="primary">Login</Button>
+          <div className="flex justify-between">
+            <Link
+              to={"/forgot-password"}
+              className="text-slate-100 no-underline"
+            >
+              Forgot password
+            </Link>
+            <p className="text-slate-300">Or</p>
+            <Link to={"/register"} className="text-slate-100 no-underline">
+              Create account
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex flex-row absolute bottom-0 w-full justify-between px-5 py-5 mt-auto items-center sm:px-7">
