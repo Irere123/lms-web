@@ -14,7 +14,7 @@ export default function LoginPage() {
       <div className="flex justify-self-center self-center sm:hidden">
         <h1 className="text-slate-900">LMS</h1>
       </div>
-      <div className="flex m-auto flex-col p-6 gap-5 bg-slate-800 sm:rounded-8 z-10 sm:w-400 w-full">
+      <div className="flex m-auto flex-col p-6 gap-5 shadow-lg bg-slate-800 sm:rounded-8 z-10 sm:w-400 w-full">
         <h2 className="text-white">Welcome back</h2>
         <div className="flex flex-col gap-3">
           <p className="text-slate-50">
@@ -31,7 +31,10 @@ export default function LoginPage() {
               Forgot password
             </Link>
             <p className="text-slate-300">Or</p>
-            <Link to={"/register"} className="text-slate-100 no-underline">
+            <Link
+              to={"/register?page=1"}
+              className="text-slate-100 no-underline"
+            >
               Create account
             </Link>
           </div>
@@ -42,13 +45,13 @@ export default function LoginPage() {
           <h2>LMS</h2>
         </div>
         <div className="flex flex-row gap-6 text-slate-900">
-          <a href="/privacy-policy.html" className="hover:text-slate-800">
+          <a
+            href="/privacy-policy.html"
+            className="text-slate-900 hover:text-slate-800"
+          >
             Privacy policy
           </a>
-          <a
-            href="https://github.com/benawad/dogehouse/issues"
-            className="ml-2 hover:text-slate-800"
-          >
+          <a href="#" className="ml-2 text-slate-900 hover:text-slate-800">
             Report a bug
           </a>
         </div>
